@@ -28,7 +28,7 @@ The objective is to discover underlying structures or patterns in the sensor dat
 - **Purpose**: To assess whether the dataset is balanced or imbalanced in terms of class distribution.
 - **Rationale**: Imbalanced datasets, where one class is significantly more prevalent than others, can bias the results of clustering analysis. It's important to check the distribution of class labels or target variables to understand the underlying data distribution and potential biases. By identifying imbalances early in the process, appropriate sampling strategies or class weighting techniques can be applied to mitigate the impact of imbalanced data on clustering results.
 
-![Dataset Balance Visualization](path/to/dataset_balance_image.png)
+![Dataset Balance Visualization](/dataset_balance_image.png)
 
 ### Exporting Preprocessed Data to CSV Files
 
