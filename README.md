@@ -28,7 +28,7 @@ The objective is to discover underlying structures or patterns in the sensor dat
 - **Purpose**: To assess whether the dataset is balanced or imbalanced in terms of class distribution.
 - **Rationale**: Imbalanced datasets, where one class is significantly more prevalent than others, can bias the results of clustering analysis. It's important to check the distribution of class labels or target variables to understand the underlying data distribution and potential biases. By identifying imbalances early in the process, appropriate sampling strategies or class weighting techniques can be applied to mitigate the impact of imbalanced data on clustering results.
 
-![Dataset Balance Visualization](/dataset_balance_image.png)
+![Dataset Balance Visualization](/1.png)
 
 ### Exporting Preprocessed Data to CSV Files
 
@@ -65,7 +65,7 @@ The optimal number of clusters (K) for K-Means was determined using the elbow me
 
 - The elbow point, indicating a significant decrease in within-cluster sum of squares, was observed at 4 clusters. This suggests that 4 is the ideal number of clusters for K-Means.
 
-![K-Means Elbow Method](path/to/kmeans_elbow_plot.png)
+![K-Means Elbow Method](/Elbow.png)
 
 ### Fine-Tuning of DBSCAN
 
@@ -77,7 +77,7 @@ The optimal epsilon value for DBSCAN was found through experimentation:
 
 Both models could identify the 6 true classes present in the dataset very accurately on the test split, with adjusted rand scores greater than 0.9.
 
-![DBSCAN Fine-Tuning](path/to/dbscan_fine_tuning_plot.png)
+![DBSCAN Fine-Tuning](/win.png)
 
 ## Data Processing Steps for Fine Tuning & Visualization
 
@@ -85,25 +85,25 @@ Both models could identify the 6 true classes present in the dataset very accura
 
 PCA was applied to reduce the dimensionality of the dataset to only 2 before clustering. This helps in improving clustering performance and reducing computational complexity while covering 99% of the data variance. The difference can be seen in the figure given below that the silhouette and Calinski score are significantly better in PCA variant.
 
-![PCA Comparison](path/to/pca_comparison_plot.png)
+![PCA Comparison](/comparison.png)
 
 ## Cluster Visualizations
 
 ### KMeans with PCA
 
-![KMeans with PCA](path/to/kmeans_pca_plot.png)
+![KMeans with PCA](/PCA-K-means.png)
 
 ### KMeans without PCA
 
-![KMeans without PCA](path/to/kmeans_no_pca_plot.png)
+![KMeans without PCA](/Without-PCA.png)
 
 ### DBSCAN with PCA
 
-![DBSCAN with PCA](path/to/dbscan_pca_plot.png)
+![DBSCAN with PCA](/DB-w-PCA.png)
 
 ### DBSCAN without PCA
 
-![DBSCAN without PCA](path/to/dbscan_no_pca_plot.png)
+![DBSCAN without PCA](/DB-wo-PCA.png)
 
 ## Dimensionality reduction and visualizations
 
